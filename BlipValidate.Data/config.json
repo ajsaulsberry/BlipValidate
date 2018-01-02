@@ -1,0 +1,16 @@
+{
+    "ConnectionStrings": {
+      "BlipConnectionString": "server=(localdb)\\ProjectsV13;Database=BlipValidateCoreDb;Integrated Security=true;"
+    },
+    "Logging": {
+      "LogLevel": {
+        "Default": "Information",
+        "Microsoft": "Warning"
+      }
+    },
+    "Tokens": {
+      "Key": "f48e503e05d31d2e18dbeca9cc7a6886",
+      "Issuer": "http://localhost:55671",
+      "Audience": "users"
+    }
+  }

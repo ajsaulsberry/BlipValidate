@@ -11,12 +11,14 @@ namespace BlipValidate.Web
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        private readonly IConfiguration _config;
+        private readonly IHostingEnvironment _env;
+        
+        public Startup(IConfiguration config, IHostingEnvironment env)
         {
-            Configuration = configuration;
+            _config = config;
+            _env = env;
         }
-
-        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -27,6 +29,8 @@ namespace BlipValidate.Web
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseDeveloperExceptionPage();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

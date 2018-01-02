@@ -2965,11 +2965,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Arthur J. Saulsberry\\Documents\\Projects\\BlipValidateCode\\BlipValidate.Data\\BlipValidate.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Arthur J. Saulsberry\\Documents\\Projects\\BlipValidateCode\\BlipValidate.Data\\BlipValidate.Data.csproj",
       "projectName": "BlipValidate.Data",
-      "projectPath": "c:\\Users\\Arthur J. Saulsberry\\Documents\\Projects\\BlipValidateCode\\BlipValidate.Data\\BlipValidate.Data.csproj",
+      "projectPath": "C:\\Users\\Arthur J. Saulsberry\\Documents\\Projects\\BlipValidateCode\\BlipValidate.Data\\BlipValidate.Data.csproj",
       "packagesPath": "C:\\Users\\Arthur J. Saulsberry\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Arthur J. Saulsberry\\Documents\\Projects\\BlipValidateCode\\BlipValidate.Data\\obj\\",
+      "outputPath": "C:\\Users\\Arthur J. Saulsberry\\Documents\\Projects\\BlipValidateCode\\BlipValidate.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
