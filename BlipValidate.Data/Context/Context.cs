@@ -10,7 +10,7 @@ namespace BlipValidate.Data.Context
 {
     public class BlipContext : DbContext
     {
-        public BlipContext(DbContextOptions options) : base(options)
+        public BlipContext(DbContextOptions<BlipContext> options) : base(options)
         {
 
         }
