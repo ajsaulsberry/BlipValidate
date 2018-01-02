@@ -8,3 +8,5 @@ C:\Users\Arthur J. Saulsberry\Documents\Projects\BlipValidateCode\BlipValidate.W
 C:\Users\Arthur J. Saulsberry\Documents\Projects\BlipValidateCode\BlipValidate.Web\obj\MCD\Debug\netcoreapp2.0\BlipValidate.Web.AssemblyInfo.cs
 C:\Users\Arthur J. Saulsberry\Documents\Projects\BlipValidateCode\BlipValidate.Web\obj\MCD\Debug\netcoreapp2.0\BlipValidate.Web.dll
 C:\Users\Arthur J. Saulsberry\Documents\Projects\BlipValidateCode\BlipValidate.Web\obj\MCD\Debug\netcoreapp2.0\BlipValidate.Web.pdb
+C:\Users\Arthur J. Saulsberry\Documents\Projects\BlipValidateCode\BlipValidate.Web\bin\MCD\Debug\netcoreapp2.0\BlipValidate.Data.dll
+C:\Users\Arthur J. Saulsberry\Documents\Projects\BlipValidateCode\BlipValidate.Web\bin\MCD\Debug\netcoreapp2.0\BlipValidate.Data.pdb

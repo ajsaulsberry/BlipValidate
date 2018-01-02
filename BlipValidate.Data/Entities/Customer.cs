@@ -5,6 +5,9 @@ namespace BlipValidate.Data.Entities
 {
     public class Customer
     {
+        [Key]
+        public int Id { get; set; }
+
         [MaxLength(100)]
         [Required]
         public string CompanyName {get; set; }

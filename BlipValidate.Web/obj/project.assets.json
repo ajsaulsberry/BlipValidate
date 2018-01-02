@@ -4746,6 +4746,20 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "BlipValidate.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "2.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.1"
+        },
+        "compile": {
+          "bin/placeholder/BlipValidate.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlipValidate.Data.dll": {}
+        }
       }
     }
   },
@@ -12525,10 +12539,16 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "BlipValidate.Data/1.0.0": {
+      "type": "project",
+      "path": "../BlipValidate.Data/BlipValidate.Data.csproj",
+      "msbuildProject": "../BlipValidate.Data/BlipValidate.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "BlipValidate.Data >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.3",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
@@ -12562,7 +12582,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Arthur J. Saulsberry\\Documents\\Projects\\BlipValidateCode\\BlipValidate.Data\\BlipValidate.Data.csproj": {
+              "projectPath": "C:\\Users\\Arthur J. Saulsberry\\Documents\\Projects\\BlipValidateCode\\BlipValidate.Data\\BlipValidate.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
