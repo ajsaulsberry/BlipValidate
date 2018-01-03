@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace BlipValidate.Web.ViewModels 
+namespace BlipValidate.Data.ViewModels 
 {
     public class CustomerAddViewModel
     {

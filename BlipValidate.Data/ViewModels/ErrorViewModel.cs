@@ -1,6 +1,6 @@
 using System;
 
-namespace BlipValidate.Web.ViewModels
+namespace BlipValidate.Data.ViewModels
 {
     public class ErrorViewModel
     {
