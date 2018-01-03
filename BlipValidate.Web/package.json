@@ -1,0 +1,29 @@
+{
+  "name": "blipvalidate.web",
+  "version": "1.0.0",
+  "description": "BlipValidate app web component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\"C:\\Users\\Arthur J. Saulsberry\\Documents\\Projects\\BlipValidateCode\\.git\""
+  },
+  "keywords": [
+    "asp",
+    "net",
+    "core",
+    "client",
+    "validation",
+    "viewmodel"
+  ],
+  "author": "ajsaulsberry@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "jquery-validate": "^2.0.0",
+    "jquery-validation-unobtrusive": "^3.2.6"
+  }
+}
