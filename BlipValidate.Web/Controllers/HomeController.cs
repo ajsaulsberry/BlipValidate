@@ -29,6 +29,12 @@ namespace BlipValidate.Web.Controllers
             return View();
         }
 
+        public IActionResult Validation()
+        {
+            ViewData["Message"] = "PluralSight HackGuides demonstration pages";
+            return RedirectToAction("Index", "Validation");
+        }
+
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
