@@ -1,36 +1,51 @@
 @model CustomerAddViewModel
 @{
-    ViewData["Title"] = "Add a customer";
+    ViewData["Title"] = "Add a customer (annotated)";
 }
 
 <div class="row">
+  <div class="col-md-4">
+    <h2>Add Customer (annotated)</h2>
+    <p>ViewModel: CustomerAddViewModel<br />(with viewmodel data annotations) </p>
+    <hr />
+  </div>
+</div>
+
+<div class="row">
     <div class="col-md-4">
-        <form asp-action="CustomerAdd" id="customerAdd">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="CompanyName" class="control-label"></label>
-                <input asp-for="CompanyName" class="form-control" />
-                <span asp-validation-for="CompanyName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="HqCountryIso3" class="control-label"></label>
-                <input asp-for="HqCountryIso3" class="form-control" />
-                <span asp-validation-for="HqCountryIso3" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="EmployeeCount" class="control-label"></label>
-                <input asp-for="EmployeeCount" class="form-control" />
-                <span asp-validation-for="EmployeeCount" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Incorporated" class="control-label"></label>
-                <input asp-for="Incorporated" class="form-control" />
-                <span asp-validation-for="Incorporated" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-default" />
-            </div>
-        </form>
+      <form asp-action="CustomerAdd" id="customerAdd">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+          <label asp-for="CompanyName" class="control-label"></label>
+          <input asp-for="CompanyName" class="form-control" />
+          <span asp-validation-for="CompanyName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+          <label asp-for="HqCountryIso3" class="control-label"></label>
+          <input asp-for="HqCountryIso3" class="form-control" />
+          <span asp-validation-for="HqCountryIso3" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+          <label asp-for="EmployeeCount" class="control-label"></label>
+          <input asp-for="EmployeeCount" class="form-control" />
+          <span asp-validation-for="EmployeeCount" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+          <label asp-for="Incorporated" class="control-label"></label>
+          <input asp-for="Incorporated" class="form-control" />
+          <span asp-validation-for="Incorporated" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+          <div class="checkbox">
+            <label>
+              <input asp-for="Nonprofit" /> @Html.DisplayNameFor(model => model.Nonprofit)
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Save" class="btn btn-default" />
+        </div>
+      </form>
     </div>
 </div>
 

@@ -6,7 +6,7 @@ namespace BlipValidate.Data.ViewModels
     public class CustomerAddViewModel
     {
         [Display(Name = "Company Name")]
-        [StringLength(100)]
+        [StringLength(100, MinimumLength = 2)]
         [Required]
         public string CompanyName {get; set; }
 
@@ -21,5 +21,7 @@ namespace BlipValidate.Data.ViewModels
         [Display(Name = "Incorporated")]
         [DataType(DataType.Date)]
         public DateTime Incorporated { get; set; }
+
+        public bool Nonprofit { get; set; }
     }
 }

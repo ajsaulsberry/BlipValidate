@@ -29,5 +29,20 @@ namespace BlipValidate.Web.Controllers
             }
             else return View();            
         }
+
+        public IActionResult CustomerAddBare()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult CustomerAddBare(CustomerAddBareViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("Index");
+            }
+            else return View();
+        }
     }
 }
