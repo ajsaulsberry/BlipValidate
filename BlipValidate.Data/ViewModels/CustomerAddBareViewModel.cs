@@ -18,5 +18,7 @@ namespace BlipValidate.Data.ViewModels
 
         public bool Nonprofit { get; set; }
 
+        public decimal StockPriceMax { get; set; }
+
     }
 }

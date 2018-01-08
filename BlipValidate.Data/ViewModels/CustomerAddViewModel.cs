@@ -1,14 +1,14 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace BlipValidate.Data.ViewModels 
+namespace BlipValidate.Data.ViewModels
 {
     public class CustomerAddViewModel
     {
         [Display(Name = "Company Name")]
-        [StringLength(100, MinimumLength = 2)]
+        [StringLength(100, MinimumLength = 5)]
         [Required]
-        public string CompanyName {get; set; }
+        public string CompanyName { get; set; }
 
         [Display(Name = "HQ Country Code")]
         [StringLength(3, MinimumLength = 3)]
@@ -23,5 +23,9 @@ namespace BlipValidate.Data.ViewModels
         public DateTime Incorporated { get; set; }
 
         public bool Nonprofit { get; set; }
+
+        [Display(Name = "Max. Stock Price")]
+        [Range(1, 5000)]
+        public decimal? StockPriceMax { get; set; }
     }
 }

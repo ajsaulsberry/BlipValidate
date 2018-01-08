@@ -44,5 +44,20 @@ namespace BlipValidate.Web.Controllers
             }
             else return View();
         }
+
+        public IActionResult ValueTypesBare()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult ValueTypesBare(ValueTypesBareViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("Index");
+            }
+            else return View();
+        }
     }
 }

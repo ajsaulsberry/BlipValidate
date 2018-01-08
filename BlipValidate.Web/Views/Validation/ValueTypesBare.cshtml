@@ -1,0 +1,95 @@
+﻿@model BlipValidate.Data.ViewModels.ValueTypesBareViewModel
+
+@{
+    ViewData["Title"] = "ValueTypesBare";
+}
+
+<h2>ValueTypesBare</h2>
+
+<h4>ValueTypesBareViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ValueTypesBare">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="TypeBoolean" /> @Html.DisplayNameFor(model => model.TypeBoolean)
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeByte" class="control-label"></label>
+                <input asp-for="TypeByte" class="form-control" />
+                <span asp-validation-for="TypeByte" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeChar" class="control-label"></label>
+                <input asp-for="TypeChar" class="form-control" />
+                <span asp-validation-for="TypeChar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeDecimal" class="control-label"></label>
+                <input asp-for="TypeDecimal" class="form-control" />
+                <span asp-validation-for="TypeDecimal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeDouble" class="control-label"></label>
+                <input asp-for="TypeDouble" class="form-control" />
+                <span asp-validation-for="TypeDouble" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeFloat" class="control-label"></label>
+                <input asp-for="TypeFloat" class="form-control" />
+                <span asp-validation-for="TypeFloat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeInt" class="control-label"></label>
+                <input asp-for="TypeInt" class="form-control" />
+                <span asp-validation-for="TypeInt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeLong" class="control-label"></label>
+                <input asp-for="TypeLong" class="form-control" />
+                <span asp-validation-for="TypeLong" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeSByte" class="control-label"></label>
+                <input asp-for="TypeSByte" class="form-control" />
+                <span asp-validation-for="TypeSByte" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeShort" class="control-label"></label>
+                <input asp-for="TypeShort" class="form-control" />
+                <span asp-validation-for="TypeShort" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeUint" class="control-label"></label>
+                <input asp-for="TypeUint" class="form-control" />
+                <span asp-validation-for="TypeUint" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeUlong" class="control-label"></label>
+                <input asp-for="TypeUlong" class="form-control" />
+                <span asp-validation-for="TypeUlong" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeUshort" class="control-label"></label>
+                <input asp-for="TypeUshort" class="form-control" />
+                <span asp-validation-for="TypeUshort" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
