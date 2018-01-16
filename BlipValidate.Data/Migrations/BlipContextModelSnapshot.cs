@@ -40,6 +40,32 @@ namespace BlipValidate.Data.Migrations
 
                     b.ToTable("Customers");
                 });
+
+            modelBuilder.Entity("BlipValidate.Data.Entities.ValueTypesBare", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<bool>("TypeBoolean");
+
+                    b.Property<byte>("TypeByte");
+
+                    b.Property<decimal>("TypeDecimal");
+
+                    b.Property<double>("TypeDouble");
+
+                    b.Property<float>("TypeFloat");
+
+                    b.Property<int>("TypeInt");
+
+                    b.Property<long>("TypeLong");
+
+                    b.Property<short>("TypeShort");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ValueTypesBareRecords");
+                });
 #pragma warning restore 612, 618
         }
     }

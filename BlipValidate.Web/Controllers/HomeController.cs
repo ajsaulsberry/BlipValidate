@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using BlipValidate.Web.ViewModels;
+using BlipValidate.Data.ViewModels;
 
 namespace BlipValidate.Web.Controllers
 {
@@ -27,6 +27,12 @@ namespace BlipValidate.Web.Controllers
             ViewData["Message"] = "Your contact page.";
 
             return View();
+        }
+
+        public IActionResult Validation()
+        {
+            ViewData["Message"] = "PluralSight HackGuides demonstration pages";
+            return RedirectToAction("Index", "Validation");
         }
 
         public IActionResult Error()

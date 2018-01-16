@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Validation Demos";
+}
+
+<div class="row">
+  <div class="col-md-6">
+    <h2 class="h2">Hack.Guides() Demonstrations</h2>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+      <ul>
+        <li><a asp-area="" asp-controller="Validation" asp-action="CustomerAdd">Add Customer (with data annotations)</a></li>
+        <li><a asp-area="" asp-controller="Validation" asp-action="CustomerAddBare">Add Customer (without data annotations)</a></li>
+        <li><a asp-area="" asp-controller="Validation" asp-action="ValueTypesBare">C# value types without data annotations</a></li>
+        <li><a asp-area="" asp-controller="Validation" asp-action="AnnotatedTypes">C# value types with data annotations and HTML type attributes</a></li>
+      </ul>
+    </div>
+</div>
