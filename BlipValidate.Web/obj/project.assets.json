@@ -13210,5 +13210,13 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Arthur J. Saulsberry\\Documents\\Projects\\BlipValidateCode\\BlipValidate.Web\\obj\\BlipValidate.Web.csproj.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
