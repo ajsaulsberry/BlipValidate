@@ -12559,6 +12559,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "C:\\Users\\Arthur J. Saulsberry\\Documents\\Projects\\BlipValidateCode\\BlipValidate.Web\\BlipValidate.Web.csproj",
       "projectName": "BlipValidate.Web",
