@@ -11,9 +11,10 @@ using System;
 namespace BlipValidate.Data.Migrations
 {
     [DbContext(typeof(BlipContext))]
-    partial class BlipContextModelSnapshot : ModelSnapshot
+    [Migration("20180108165924_value-types-entities")]
+    partial class valuetypesentities
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -39,32 +40,6 @@ namespace BlipValidate.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Customers");
-                });
-
-            modelBuilder.Entity("BlipValidate.Data.Entities.ValueTypesBare", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<bool>("TypeBoolean");
-
-                    b.Property<byte>("TypeByte");
-
-                    b.Property<decimal>("TypeDecimal");
-
-                    b.Property<double>("TypeDouble");
-
-                    b.Property<float>("TypeFloat");
-
-                    b.Property<int>("TypeInt");
-
-                    b.Property<long>("TypeLong");
-
-                    b.Property<short>("TypeShort");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("ValueTypesBareRecords");
                 });
 #pragma warning restore 612, 618
         }

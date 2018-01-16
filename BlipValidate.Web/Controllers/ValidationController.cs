@@ -1,8 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using BlipValidate.Data.ViewModels;
 
@@ -17,10 +13,16 @@ namespace BlipValidate.Web.Controllers
 
         public IActionResult CustomerAdd()
         {
-            return View();
+            var model = new CustomerAddViewModel
+            {
+                EarliestAudit = DateTime.Parse("2017-04-11"),
+                LatestAudit = DateTime.Parse("2017-04-29")
+            };
+            return View(model);
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult CustomerAdd(CustomerAddViewModel model)
         {
             if(ModelState.IsValid)
@@ -36,6 +38,7 @@ namespace BlipValidate.Web.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult CustomerAddBare(CustomerAddBareViewModel model)
         {
             if (ModelState.IsValid)
@@ -51,7 +54,23 @@ namespace BlipValidate.Web.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult ValueTypesBare(ValueTypesBareViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("Index");
+            }
+            else return View();
+        }
+        public IActionResult AnnotatedTypes()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult AnnotatedTypes(AnnotatedTypesViewModel model)
         {
             if (ModelState.IsValid)
             {

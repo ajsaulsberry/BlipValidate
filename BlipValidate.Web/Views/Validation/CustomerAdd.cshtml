@@ -17,7 +17,7 @@
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="form-group">
           <label asp-for="CompanyName" class="control-label"></label>
-          <input asp-for="CompanyName" class="form-control" />
+          <input asp-for="CompanyName" class="form-control" placeholder="Enter your cool business handle." autocomplete="organization" autofocus />
           <span asp-validation-for="CompanyName" class="text-danger"></span>
         </div>
         <div class="form-group">
@@ -46,6 +46,11 @@
           <label asp-for="StockPriceMax" class="control-label"></label>
           <input asp-for="StockPriceMax" class="form-control" />
           <span asp-validation-for="StockPriceMax" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+          <label asp-for="AuditDate" class="control-label"></label>
+          <input asp-for="AuditDate" class="form-control" min=@Model.EarliestAudit.ToString("yyyy-MM-dd") max=@Model.LatestAudit.ToString("yyyy-MM-dd") />
+          <span asp-validation-for="AuditDate" class="text-danger"></span>
         </div>
         <div class="form-group">
           <input type="submit" value="Save" class="btn btn-default" />

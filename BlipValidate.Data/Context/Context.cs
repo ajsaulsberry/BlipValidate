@@ -16,5 +16,6 @@ namespace BlipValidate.Data.Context
         }
 
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<ValueTypesBare> ValueTypesBareRecords { get; set; }
     }
 }

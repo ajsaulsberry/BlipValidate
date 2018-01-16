@@ -11,9 +11,10 @@ using System;
 namespace BlipValidate.Data.Migrations
 {
     [DbContext(typeof(BlipContext))]
-    partial class BlipContextModelSnapshot : ModelSnapshot
+    [Migration("20180108183153_ValueTypesBare")]
+    partial class ValueTypesBare
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
