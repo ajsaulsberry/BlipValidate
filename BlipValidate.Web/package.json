@@ -22,8 +22,12 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "jquery": "^3.2.1",
     "jquery-validate": "^2.0.0",
-    "jquery-validation-unobtrusive": "^3.2.6"
+    "jquery-validation-unobtrusive": "^3.2.6",
+    "save-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "merge-stream": "^1.0.1"
   }
 }
