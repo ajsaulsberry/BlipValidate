@@ -22,6 +22,13 @@ bld/
 [Oo]bj/
 [Ll]og/
 
+# VS Code files, except user-modifyable
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
 # Visual Studio 2015 cache/options directory
 .vs/
 # Uncomment if you have tasks that create the project's static files in wwwroot
@@ -261,3 +268,4 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+BlipValidate.Data/bin/MCD/Debug/netstandard2.0/BlipValidate.Data.dll

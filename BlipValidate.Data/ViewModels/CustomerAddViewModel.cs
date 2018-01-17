@@ -36,8 +36,12 @@ namespace BlipValidate.Data.ViewModels
         // Nullable required to prevent initialization from creating a default value of 01/01/0001 00:00:00.
         public DateTime? AuditDate { get; set; }
 
-        public DateTime EarliestAudit { get; set; }
+        // If this isn't nullable ModelState.IsValid will be false when the form is submitted.
+        // Since the value isn't being stored in the form in an <input type="hidden" /> it won't be returned to the controller.
+        // Rather than make it take a needless roundtrip, make it nullable so that when the form is submitted the ModelState will be valid without it.
+        public DateTime? EarliestAudit { get; set; }
 
-        public DateTime LatestAudit { get; set; }
+        // Nullable for the same reason as EarliestAudit.
+        public DateTime? LatestAudit { get; set; }
     }
 }
