@@ -1,8 +1,0 @@
-C:\Users\Arthur J. Saulsberry\Documents\Projects\BlipValidateCode\BlipValidate.Data\bin\MCD\Debug\netstandard2.0\BlipValidate.Data.deps.json
-C:\Users\Arthur J. Saulsberry\Documents\Projects\BlipValidateCode\BlipValidate.Data\bin\MCD\Debug\netstandard2.0\BlipValidate.Data.dll
-C:\Users\Arthur J. Saulsberry\Documents\Projects\BlipValidateCode\BlipValidate.Data\bin\MCD\Debug\netstandard2.0\BlipValidate.Data.pdb
-C:\Users\Arthur J. Saulsberry\Documents\Projects\BlipValidateCode\BlipValidate.Data\obj\MCD\Debug\netstandard2.0\BlipValidate.Data.csproj.CoreCompileInputs.cache
-C:\Users\Arthur J. Saulsberry\Documents\Projects\BlipValidateCode\BlipValidate.Data\obj\MCD\Debug\netstandard2.0\BlipValidate.Data.AssemblyInfoInputs.cache
-C:\Users\Arthur J. Saulsberry\Documents\Projects\BlipValidateCode\BlipValidate.Data\obj\MCD\Debug\netstandard2.0\BlipValidate.Data.AssemblyInfo.cs
-C:\Users\Arthur J. Saulsberry\Documents\Projects\BlipValidateCode\BlipValidate.Data\obj\MCD\Debug\netstandard2.0\BlipValidate.Data.dll
-C:\Users\Arthur J. Saulsberry\Documents\Projects\BlipValidateCode\BlipValidate.Data\obj\MCD\Debug\netstandard2.0\BlipValidate.Data.pdb
