@@ -1,7 +1,13 @@
 @model CustomerAddViewModel
 @{
-    ViewData["Title"] = "Add a customer (annotated)";
+  ViewData["Title"] = "Add a customer (annotated)";
 }
+
+
+@section Scripts {
+  @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
 
 <div class="row">
   <div class="col-md-4">
@@ -12,57 +18,55 @@
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-      <form asp-action="CustomerAdd" id="customerAdd">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <div class="form-group">
-          <label asp-for="CompanyName" class="control-label"></label>
-          <input asp-for="CompanyName" class="form-control" placeholder="Enter your cool business handle." autocomplete="organization" autofocus />
-          <span asp-validation-for="CompanyName" class="text-danger"></span>
+  <div class="col-md-4">
+    <form asp-action="CustomerAdd" id="customerAdd">
+      <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+      <div class="form-group">
+        <label asp-for="CompanyName" class="control-label"></label>
+        <input asp-for="CompanyName" class="form-control" placeholder="Enter your cool business handle." autocomplete="organization" autofocus="autofocus" />
+        <span asp-validation-for="CompanyName" class="text-danger"></span>
+      </div>
+      <div class="form-group">
+        <label asp-for="HqCountryIso3" class="control-label"></label>
+        <input asp-for="HqCountryIso3" class="form-control" />
+        <span asp-validation-for="HqCountryIso3" class="text-danger"></span>
+      </div>
+      <div class="form-group">
+        <label asp-for="EmployeeCount" class="control-label"></label>
+        <input asp-for="EmployeeCount" class="form-control" />
+        <span asp-validation-for="EmployeeCount" class="text-danger"></span>
+      </div>
+      <div class="form-group">
+        <label asp-for="Incorporated" class="control-label"></label>
+        <input asp-for="Incorporated" class="form-control" />
+        <span asp-validation-for="Incorporated" class="text-danger"></span>
+      </div>
+      <div class="form-group">
+        <div class="checkbox">
+          <label>
+            <input asp-for="Nonprofit" /> @Html.DisplayNameFor(model => model.Nonprofit)
+          </label>
         </div>
-        <div class="form-group">
-          <label asp-for="HqCountryIso3" class="control-label"></label>
-          <input asp-for="HqCountryIso3" class="form-control" />
-          <span asp-validation-for="HqCountryIso3" class="text-danger"></span>
-        </div>
-        <div class="form-group">
-          <label asp-for="EmployeeCount" class="control-label"></label>
-          <input asp-for="EmployeeCount" class="form-control" />
-          <span asp-validation-for="EmployeeCount" class="text-danger"></span>
-        </div>
-        <div class="form-group">
-          <label asp-for="Incorporated" class="control-label"></label>
-          <input asp-for="Incorporated" class="form-control" />
-          <span asp-validation-for="Incorporated" class="text-danger"></span>
-        </div>
-        <div class="form-group">
-          <div class="checkbox">
-            <label>
-              <input asp-for="Nonprofit" /> @Html.DisplayNameFor(model => model.Nonprofit)
-            </label>
-          </div>
-        </div>
-        <div class="form-group">
-          <label asp-for="StockPriceMax" class="control-label"></label>
-          <input asp-for="StockPriceMax" class="form-control" />
-          <span asp-validation-for="StockPriceMax" class="text-danger"></span>
-        </div>
-        <div class="form-group">
-          <label asp-for="AuditDate" class="control-label"></label>
-          <input asp-for="AuditDate" class="form-control" min=@Model.EarliestAudit.ToString("yyyy-MM-dd") max=@Model.LatestAudit.ToString("yyyy-MM-dd") />
-          <span asp-validation-for="AuditDate" class="text-danger"></span>
-        </div>
-        <div class="form-group">
-          <input type="submit" value="Save" class="btn btn-default" />
-        </div>
-      </form>
-    </div>
+      </div>
+      <div class="form-group">
+        <label asp-for="StockPriceMax" class="control-label"></label>
+        <input asp-for="StockPriceMax" class="form-control" />
+        <span asp-validation-for="StockPriceMax" class="text-danger"></span>
+      </div>
+      <div class="form-group">
+        <label asp-for="AuditDate" class="control-label"></label>
+        <input asp-for="AuditDate" class="form-control"
+               min=@(Model.EarliestAudit.HasValue ? Model.EarliestAudit.Value.ToString("yyyy-MM-dd") : null)
+               max=@(Model.LatestAudit.HasValue ? Model.LatestAudit.Value.ToString("yyyy-MM-dd") : null) />
+        <span asp-validation-for="AuditDate" class="text-danger"></span>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-default" />
+      </div>
+    </form>
+  </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+  <a asp-action="Index">Back to List</a>
 </div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

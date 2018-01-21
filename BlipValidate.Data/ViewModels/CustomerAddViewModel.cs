@@ -33,6 +33,7 @@ namespace BlipValidate.Data.ViewModels
 
         [Display(Name = "Audit Date")]
         [DataType(DataType.Date)]
+        [Required]
         // Nullable required to prevent initialization from creating a default value of 01/01/0001 00:00:00.
         public DateTime? AuditDate { get; set; }
 
