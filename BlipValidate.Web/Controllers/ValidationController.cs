@@ -26,7 +26,12 @@ namespace BlipValidate.Web.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult CustomerAdd(CustomerAddViewModel model)
         {
-            if(ModelState.IsValid)
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            if (ModelState.IsValid)
             {
                 return RedirectToAction("Index");
             }
@@ -65,11 +70,16 @@ namespace BlipValidate.Web.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult ValueTypesBare(ValueTypesBareViewModel model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
             if (ModelState.IsValid)
             {
                 return RedirectToAction("Index");
             }
-            else return View();
+            else return View(model);
         }
         public IActionResult AnnotatedTypes()
         {
