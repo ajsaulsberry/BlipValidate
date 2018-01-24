@@ -15,7 +15,7 @@ namespace BlipValidate.Web.Controllers
         {
             var model = new CustomerAddViewModel
             {
-                // The model would typically be initialized with data from a repository call.
+                // The model object would typically be initialized with a repository method.
                 EarliestAudit = DateTime.Parse("2017-04-11"),
                 LatestAudit = DateTime.Parse("2017-04-29")
             };

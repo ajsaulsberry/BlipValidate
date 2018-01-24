@@ -21,7 +21,7 @@ namespace BlipValidate.Data.ViewModels
 
         public long TypeLong { get; set; }
 
-        public sbyte TypeSByte { get; set; }
+        public sbyte? TypeSByte { get; set; }
 
         public short TypeShort { get; set; }
 
