@@ -29,6 +29,7 @@ namespace BlipValidate.Data.ViewModels
 
         [Display(Name = "Max. Stock Price")]
         [Range(1, 5000)]
+        //[RegularExpression(@"^((\d+(\.\d{0,2})?)|(\.\d{0,2}))$", ErrorMessage = "The stock price must be positive a number")]
         public decimal? StockPriceMax { get; set; }
 
         [Display(Name = "Audit Date")]

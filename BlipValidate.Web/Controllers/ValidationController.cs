@@ -1,6 +1,7 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
 using BlipValidate.Data.ViewModels;
+using System.Diagnostics;
 
 namespace BlipValidate.Web.Controllers
 {
@@ -15,7 +16,7 @@ namespace BlipValidate.Web.Controllers
         {
             var model = new CustomerAddViewModel
             {
-                // The model would typically be initialized with data from a repository call.
+                // The model object would typically be initialized with a repository method.
                 EarliestAudit = DateTime.Parse("2017-04-11"),
                 LatestAudit = DateTime.Parse("2017-04-29")
             };
@@ -28,7 +29,15 @@ namespace BlipValidate.Web.Controllers
         {
             if (model == null)
             {
-                throw new ArgumentNullException(nameof(model));
+                ModelState.AddModelError(string.Empty, @"There was a problem saving the data. Please try again.");
+                // Re-initialize model.
+                model = new CustomerAddViewModel
+                {
+                    // The model object would typically be (re)initialized with a repository method.
+                    EarliestAudit = DateTime.Parse("2017-04-11"),
+                    LatestAudit = DateTime.Parse("2017-04-29")
+                };
+                return View(model);
             }
 
             if (ModelState.IsValid)
@@ -37,6 +46,15 @@ namespace BlipValidate.Web.Controllers
             }
             else
             {
+                foreach (var v in ModelState.Values)
+                {
+                    foreach (var e in v.Errors)
+                    {
+                        Debug.WriteLine(e.ErrorMessage.ToString());
+                        ModelState.AddModelError(string.Empty, $@"Looks like the value {v.RawValue.ToString()} doesn't match the required data type.");
+                    }
+                }
+                
                 // These model values need to be reset. 
                 // They are not returned in the model because they are not on the form as <input> element type="hidden".
                 model.EarliestAudit = DateTime.Parse("2017-04-11");
