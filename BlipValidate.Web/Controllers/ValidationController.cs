@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using BlipValidate.Data.ViewModels;
 
@@ -37,6 +38,15 @@ namespace BlipValidate.Web.Controllers
             }
             else
             {
+                foreach(var k in ModelState.Keys)
+                {
+                    var v = ModelState[k];
+                    foreach (var e in v.Errors)
+                    {
+                        Debug.WriteLine($"Field: {k}, v.ValidationState: {v.ValidationState}, v.RawValue: {v.RawValue}, e.ErrorMessage: {e.ErrorMessage}");
+                    }
+                }
+                
                 // These model values need to be reset. 
                 // They are not returned in the model because they are not on the form as <input> element type="hidden".
                 model.EarliestAudit = DateTime.Parse("2017-04-11");

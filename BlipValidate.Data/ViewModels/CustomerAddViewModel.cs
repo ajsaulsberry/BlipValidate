@@ -11,7 +11,9 @@ namespace BlipValidate.Data.ViewModels
         public string CompanyName { get; set; }
 
         [Display(Name = "HQ Country Code")]
-        [StringLength(3, MinimumLength = 3)]
+        // Inadvisable to use both StringLength and RegularExpression, since both generate errors.
+        // StringLength duplicates RegularExpression constraints.
+        // [StringLength(3, MinimumLength = 3)]
         [RegularExpression(@"[A-Za-z]{3}", ErrorMessage = @"The country code must be three letters.")]
         [Required]
         public string HqCountryIso3 { get; set; }
@@ -29,6 +31,7 @@ namespace BlipValidate.Data.ViewModels
 
         [Display(Name = "Max. Stock Price")]
         [Range(1, 5000)]
+        [Required]
         public decimal? StockPriceMax { get; set; }
 
         [Display(Name = "Audit Date")]
