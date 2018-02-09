@@ -1,6 +1,6 @@
 # BlipValidate
 
-**_BlipValidate_** is an ASP.NET MVC case study solution to accompany three guides in the **PluralSight** [**HackGuides()**](https://www.pluralsight.com/guides/microsoft-net) collection for Microsoft .NET technologies.
+**_BlipValidate_** is an ASP.NET Core MVC case study solution to accompany three guides in the **PluralSight** [**HackGuides()**](https://www.pluralsight.com/guides/microsoft-net) collection for Microsoft .NET technologies.
 
 ## PluralSight Hack.Guides()
 
