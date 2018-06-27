@@ -10,11 +10,11 @@
 <hr />
 <div class="row">
   <div class="col-md-4">
-    <form asp-action="AnnotatedTypes" id="annotatedTypes">
+    <form asp-action="AnnotatedTypes">
       <div asp-validation-summary="ModelOnly" class="text-danger"></div>
       <div class="form-group">
         <label asp-for="CreditCardNumber" class="control-label"></label>
-        <input asp-for="CreditCardNumber" id="creditCardNumber"class="form-control" autofocus="autofocus" autocomplete="on" />
+        <input asp-for="CreditCardNumber" class="form-control" autofocus="autofocus" autocomplete="on" />
         <span asp-validation-for="CreditCardNumber" class="text-danger"></span>
       </div>
       <div class="form-group">
@@ -107,7 +107,7 @@
   @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 
 @*<script type="text/javascript">
-  $("#annotatedTypes").validate({
+  $("#AnnotatedTypes").validate({
     rules: {
       creditCardNumber: {
         required: true,

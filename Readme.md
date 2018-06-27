@@ -1,8 +1,12 @@
 # BlipValidate
 
-**_BlipValidate_** is an ASP.NET Core MVC case study solution to accompany three guides in the **PluralSight** [**HackGuides()**](https://www.pluralsight.com/guides/microsoft-net) collection for Microsoft .NET technologies.
+**_BlipValidate_** is an ASP.NET Core MVC case study solution to accompany an ASP.NET Core article on [**codeArbor**](https://codearbor.com) and three guides in the [**PluralSight Guides**](https://www.pluralsight.com/guides/microsoft-net) collection for Microsoft .NET technologies.
 
-## PluralSight Hack.Guides()
+## codeArbor Articles
+
+[Building robust numeric fields for HTML forms with ASP.NET Core MVC](https://codearbor.com/library/building-robust-numeric-fields-for-html-forms-with-aspnet-core-mvc/) - Building robust numeric data fields for data entry on the web should include validation of client data on both the client, in the browser, and on the server. ASP.NET Core MVC provides excellent resources for these tasks.
+
+## PluralSight Guides
 
 [ASP.NET Core MVC Client Data Validation - Part 1: ViewModels and Data Annotations](https://www.pluralsight.com/guides/microsoft-net/asp-net-core-mvc-client-data-validation-part-1-viewmodels-and-data-annotations) - This guide, the first of three parts, presents the foundational level of client-side data validation using the MVVM design pattern: viewmodels and data annotations.
 
@@ -10,7 +14,7 @@
 
 [ASP.NET Core MVC Client Data Validation - Part 3: Controller validation](https://www.pluralsight.com/guides/microsoft-net/asp-net-core-mvc-client-data-validation-part-3-controller-validation) - Part 3 shows how the view model, data annotations, and the `ModelState` object come together with MVC model binding to provide server-side validation of client data, an essential part of the client data validation process.
 
-*Notice: PluralSight and the author(s) disclaim any liability for errors or omissions in this code. See the [Disclaimer of Warranties and Limitation of Liability](#disclaimer-of-warranties-and-limitation-of-liability) for complete information.*
+*Notice: codeArbor, PluralSight, and the author(s) disclaim any liability for errors or omissions in this code. See the [Disclaimer of Warranties and Limitation of Liability](#disclaimer-of-warranties-and-limitation-of-liability) for complete information.*
 
 ## Solution Projects
 
