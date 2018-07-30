@@ -6,7 +6,7 @@ Thanks for taking an interest in this project. The authors hope the code in this
 
 * If you have a suggestion to make the code more useful, and that suggestion takes the form of *code*, see the section on [Making Changes](#making-changes).
 
-* If you believe you have found a bug in the code, please check to see if it has previously been reported by searching for it on GitHub under [Issues](https://github.com/ajsaulsberry/BlipAjax/issues) before opening a new issue or making changes.
+* If you believe you have found a bug in the code, please check to see if it has previously been reported by searching for it on GitHub under [Issues](https://github.com/ajsaulsberry/BlipValidateCode/issues) before opening a new issue or making changes.
 
 ## Reporting issues
 
