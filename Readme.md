@@ -1,6 +1,6 @@
 # BlipValidate
 
-**_BlipValidate_** is an ASP.NET Core MVC case study solution to accompany an ASP.NET Core article on [**codeArbor**](https://codearbor.com) and three guides in the [**PluralSight Guides**](https://www.pluralsight.com/guides/microsoft-net) collection for Microsoft .NET technologies.
+**_BlipValidate_** is an ASP.NET Core MVC case study solution to accompany an ASP.NET Core article on [**codeArbor**](https://codearbor.com) and three guides in the [**PluralSight Guides**](https://www.pluralsight.com/guides) collection for Microsoft .NET technologies.
 
 ## codeArbor Articles
 
@@ -8,11 +8,11 @@
 
 ## PluralSight Guides
 
-[ASP.NET Core MVC Client Data Validation - Part 1: ViewModels and Data Annotations](https://www.pluralsight.com/guides/microsoft-net/asp-net-core-mvc-client-data-validation-part-1-viewmodels-and-data-annotations) - This guide, the first of three parts, presents the foundational level of client-side data validation using the MVVM design pattern: viewmodels and data annotations.
+[ASP.NET Core MVC Client Data Validation - Part 1: ViewModels and Data Annotations](https://www.pluralsight.com/guides/asp-net-core-mvc-client-data-validation-part-1-viewmodels-and-data-annotations) - This guide, the first of three parts, presents the foundational level of client-side data validation using the MVVM design pattern: viewmodels and data annotations.
 
-[ASP.NET Core MVC Client Data Validation - Part 2: jQuery validation](https://www.pluralsight.com/guides/microsoft-net/asp-net-core-mvc-client-data-validation-part-2-jquery-validation) - The second installment builds on the foundation created in Part 1 by explaining how widely-used jQuery libraries can provide responsive client-side data validation by working in conjunction with the HTML created by ASP.NET Core MVC.
+[ASP.NET Core MVC Client Data Validation - Part 2: jQuery validation](https://www.pluralsight.com/guides/asp-net-core-mvc-client-data-validation-part-2-jquery-validation) - The second installment builds on the foundation created in Part 1 by explaining how widely-used jQuery libraries can provide responsive client-side data validation by working in conjunction with the HTML created by ASP.NET Core MVC.
 
-[ASP.NET Core MVC Client Data Validation - Part 3: Controller validation](https://www.pluralsight.com/guides/microsoft-net/asp-net-core-mvc-client-data-validation-part-3-controller-validation) - Part 3 shows how the view model, data annotations, and the `ModelState` object come together with MVC model binding to provide server-side validation of client data, an essential part of the client data validation process.
+[ASP.NET Core MVC Client Data Validation - Part 3: Controller validation](https://www.pluralsight.com/guides/asp-net-core-mvc-client-data-validation-part-3-controller-validation) - Part 3 shows how the view model, data annotations, and the `ModelState` object come together with MVC model binding to provide server-side validation of client data, an essential part of the client data validation process.
 
 *Notice: codeArbor, PluralSight, and the author(s) disclaim any liability for errors or omissions in this code. See the [Disclaimer of Warranties and Limitation of Liability](#disclaimer-of-warranties-and-limitation-of-liability) for complete information.*
 
