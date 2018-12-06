@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "defaultProvider": "filesystem",
+  "libraries": [
+    {
+      "library": "node_modules/bootstrap/dist/css/",
+      "destination": "wwwroot/lib/bootstrap/dist/css/",
+      "files": [
+        "bootstrap.css"
+      ]
+    },
+    {
+      "library": "node_modules/jquery/dist/",
+      "destination": "wwwroot/lib/jquery/dist/",
+      "files": [
+        "core.js",
+        "jquery.js",
+        "jquery.min.js"
+      ]
+    },
+    {
+      "library": "node_modules/bootstrap/dist/js/",
+      "destination": "wwwroot/lib/bootstrap/dist/js/",
+      "files": [
+        "bootstrap.min.js"
+      ]
+    },
+    {
+      "library": "node_modules/jquery-validation/dist/",
+      "destination": "wwwroot/lib/jquery-validation/dist/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "popper.js@1.14.6",
+      "destination": "wwwroot/lib/popper.js/dist/",
+      "files": [
+        "umd/popper.js",
+        "umd/popper.min.js"
+      ]
+    }
+  ]
+}
