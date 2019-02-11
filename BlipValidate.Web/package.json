@@ -21,12 +21,12 @@
   "author": "ajsaulsberry@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.2.1",
+    "jquery": "^3.3.1",
     "jquery-validation": "^1.19.0",
-    "jquery-validation-unobtrusive": "^3.2.6"
+    "jquery-validation-unobtrusive": "^3.2.11"
   },
   "devDependencies": {
-    "bootstrap": "^4.1.3",
+    "bootstrap": "^4.2.1",
     "gulp": "^4.0.0",
     "merge-stream": "^1.0.1"
   }

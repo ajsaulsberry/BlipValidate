@@ -27,13 +27,13 @@
 
 | Dependency | Version*
 | :--- | ---:
-| .NET Standard | 2.0.1
-| ASP.NET Core (All) | 2.0.5
-| Bootstrap | 3.3.7
-| Entity Framework Core SQL Server | 2.0.1
-| jQuery | 3.2.1
-| jQuery Validation | 1.17.0
-| Microsoft jQuery Unobtrusive Validation | 3.2.6
+| .NET Standard | 2.0.3
+| ASP.NET Core (All) | 2.2.1
+| Bootstrap | 4.2.1
+| Entity Framework Core SQL Server | 2.2.1
+| jQuery | 3.3.1
+| jQuery Validation | 1.19.0
+| Microsoft jQuery Unobtrusive Validation | 3.2.11
 
 &ast; As of the latest commit.
 

@@ -37,6 +37,32 @@
         "umd/popper.js",
         "umd/popper.min.js"
       ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "jquery-validation-unobtrusive@3.2.11",
+      "destination": "wwwroot/lib/jquery-validation-unobtrusive/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "jquery-validate@1.19.0",
+      "destination": "wwwroot/lib/jquery-validate/",
+      "files": [
+        "jquery.validate.min.js",
+        "jquery.validate.js",
+        "additional-methods.min.js",
+        "additional-methods.js"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "jquery@3.3.1",
+      "destination": "wwwroot/lib/jquery/",
+      "files": [
+        "jquery.min.js",
+        "jquery.js",
+        "core.js"
+      ]
     }
   ]
 }
