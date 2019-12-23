@@ -21,6 +21,7 @@
   "author": "ajsaulsberry@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "jquery-validation": "^1.19.1",
     "jquery-validation-unobtrusive": "^3.2.11"
