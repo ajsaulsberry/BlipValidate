@@ -23,7 +23,7 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.5.0",
-    "jquery-validation": "^1.19.1",
+    "jquery-validation": "^1.19.5",
     "jquery-validation-unobtrusive": "^3.2.11",
     "kind-of": ">=6.0.3"
   },
